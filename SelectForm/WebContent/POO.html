@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h3> <FONT FACE="arial" SIZE=5 COLOR=blue> Cuenta de Ahorros</FONT></h3>
+
+   <script type="text/javascript">
+
+   function Cliente(nombre,saldo){
+	this.nombre=nombre;
+	this.saldo=saldo;
+	this.depositar=depositar;
+	this.extraer=extraer;
+	}
+      function depositar(dinero){
+	   this.saldo=this.saldo+dinero;
+      }
+        function extraer(dinero){
+	     this.saldo=this.saldo-dinero;
+        }
+   </script>
+
+ <script type="text/javascript">
+    var cliente1;
+       cliente1=new Cliente("Juan",12000);
+         
+         document.write("Nombre del Cliente : " +cliente1.nombre + "<br>");
+         document.write("Saldo Actual : " +cliente1.saldo + "<br>");
+         
+         cliente1.depositar(120);
+           document.write("Saldo despues de depositar  120 euros : "+ cliente1.saldo + "<br>");
+           cliente1.extraer(1000);
+           document.write("Saldo despues de extraer 1000euros : " +cliente1.saldo + "<br>");
+
+
+</script>
+
+
+</body>
+</html>

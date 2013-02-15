@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>
+		<FONT FACE="arial" SIZE=5 COLOR=green> Cuantos lenguajes de
+			Programacion Conoce ?</FONT>
+	</h3>
+	<script type="text/javascript">
+		function contarSeleccionados() {
+			var cant = 0;
+			if (document.getElementById("checkbox1").checked) {
+				cant++;
+			}
+			if (document.getElementById("checkbox2").checked) {
+				cant++;
+			}
+			if (document.getElementById("checkbox3").checked) {
+				cant++;
+			}
+			if (document.getElementById("checkbox4").checked) {
+				cant++;
+			}
+			alert(" Conoce " + cant + " de Lenguajes")
+		}
+	</script>
+
+	<script type="text/javascript">
+		function mostrarSeleccion() {
+			if (document.getElementById("radio2").checked) {
+				alert("Tienes la Eso");
+			}
+			if (document.getElementById("radio3").checked) {
+				alert("Tienes Estudios Secundarios");
+			}
+			if (document.getElementById("radio4").checked) {
+				alert("Tienes Estudios Universitarios");
+			}
+		}
+	</script>
+	<form>
+		<input type="checkbox" id="checkbox1"> JavaScript <br> <input
+			type="checkbox" id="checkbox2"> Struts <br> <input
+			type="checkbox" id="checkbox3"> Java <br> <input
+			type="checkbox" id="checkbox4"> .Net <br> <input
+			type="button" value="Mostrar" onclick="contarSeleccionados()">
+	</form>
+
+	<form>
+		<input type="radio" id="radio1" name="estudios"> Sin Estudios
+		<br> <input type="radio" id="radio2" name="estudios">
+		Estudios Primarios <br> <input type="radio" id="radio3"
+			name="estudios"> Estudios Secundarios<br> <input
+			type="radio" id="radio4" name="estudios"> Estudios
+		Universitarios<br>
+
+	</form>
+</body>
+</html>
